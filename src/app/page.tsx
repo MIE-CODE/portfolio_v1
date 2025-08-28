@@ -1,6 +1,4 @@
 import { ThemeToggle } from "@/components/ThemeToggle.component";
-import Image from "next/image";
-import { Provider } from "./Providers/Provider";
 
 export default function Home() {
   return (
