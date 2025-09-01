@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "MIE Portfolio",
     images: [
       {
-        url: "https://mie-portfolio-v1.vercel.app/images/banner.png",
+        url: "/images/banner.png",
         width: 1200,
         height: 630,
         alt: "Menyaga Enyo Israel Portfolio",

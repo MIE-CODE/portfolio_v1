@@ -9,7 +9,7 @@ export default function Home() {
       )}
     >
       <ThemeToggle />
-      <h1>welcome</h1>
+      <h1>welcodlkuiyfjcme</h1>
     </div>
   );
 }
