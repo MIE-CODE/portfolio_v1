@@ -46,7 +46,7 @@ export const Hero = () => {
         className="max-w-4xl px-6"
       >
         <p className="text-sm uppercase tracking-widest text-muted mb-4">
-          Senior Frontend & Mobile Developer
+          Frontend & Mobile Developer
         </p>
         <motion.h1
           initial={{ scale: 0.98 }}
