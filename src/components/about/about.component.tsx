@@ -50,6 +50,7 @@ export const AboutTimeline = () => {
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.15 }}
+                viewport={{ once: true }}
                 className="p-4 border border-divider rounded-2xl bg-card"
               >
                 <div className="flex items-center justify-between">

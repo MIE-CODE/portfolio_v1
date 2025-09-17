@@ -63,7 +63,12 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-[90%] md:w-fit fixed top-6 left-1/2 -translate-x-1/2 bg-card/80 backdrop-blur-md px-8 py-3 rounded-full shadow-lg z-50">
+    <motion.nav
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 1 }}
+      className="w-[90%] md:w-fit fixed top-6 left-1/2 -translate-x-1/2 bg-card/80 backdrop-blur-md px-8 py-3 rounded-full shadow-lg z-50"
+    >
       <ul className="md:hidden gap-6 flex justify-between items-center">
         <li>
           {" "}
@@ -98,6 +103,6 @@ export const Navbar = () => {
           </li>
         ))}
       </ul>
-    </nav>
+    </motion.nav>
   );
 };

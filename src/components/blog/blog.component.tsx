@@ -21,6 +21,7 @@ export const Blog = () => {
             key={p.id}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             className="p-6 border border-divider rounded-2xl bg-card"
           >
             <h3 className="font-semibold mb-2">{p.title}</h3>
