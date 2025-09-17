@@ -11,6 +11,7 @@ import { Skills } from "@/components/skills/skills.component";
 import { AboutTimeline } from "@/components/about/about.component";
 import { Hero } from "@/components/hero/hero.component";
 import { useTheme } from "@/hooks/useTheme";
+import { Navbar } from "@/components/navbar/navbar.component";
 
 /*
   Complex Portfolio single-file React component (Next.js client component)
@@ -49,11 +50,7 @@ export default function ComplexPortfolio() {
         <header className="flex items-center justify-between p-6">
           <div className="font-bold">MIE</div>
           <div className="flex items-center gap-4">
-            <nav className="hidden md:flex gap-4 text-sm text-muted">
-              <a href="#projects">Projects</a>
-              <a href="#testimonials">Testimonials</a>
-              <a href="#contact">Contact</a>
-            </nav>
+            <Navbar />
             <ThemeToggle />
           </div>
         </header>

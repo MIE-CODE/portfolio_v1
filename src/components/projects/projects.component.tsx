@@ -37,7 +37,7 @@ export const Projects = () => {
   return (
     <section className="py-20 px-6" id="projects">
       <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
-      <div className="flex items-center justify-center gap-4 mb-8">
+      <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
         {["all", "frontend", "mobile", "fullstack"].map((f) => (
           <button
             key={f}

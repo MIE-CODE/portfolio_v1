@@ -24,15 +24,15 @@ export const Testimonials = () => {
   return (
     <section className="py-20 px-6" id="testimonials">
       <h2 className="text-3xl font-bold text-center mb-8">Testimonials</h2>
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto relative">
         <AnimatePresence>
           <motion.blockquote
             key={i}
-            initial={{ opacity: 0, y: 10, position: "absolute" }}
+            initial={{ opacity: 0, y: 0, position: "absolute" }}
             animate={{ opacity: 1, y: 0, position: "relative" }}
-            exit={{ opacity: 0, y: -10, position: "absolute" }}
+            exit={{ opacity: 0, y: 0, position: "absolute" }}
             transition={{ duration: 0.4 }}
-            className="w-full max-w-[768px] p-8 rounded-2xl border border-divider bg-card text-center"
+            className="w-full max-w-[768px] p-4 md:p-8 rounded-2xl border border-divider bg-card text-center"
           >
             <p className="text-muted mb-4">“{testimonials[i].text}”</p>
             <div className="font-semibold">

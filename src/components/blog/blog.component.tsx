@@ -26,7 +26,12 @@ export const Blog = () => {
             <h3 className="font-semibold mb-2">{p.title}</h3>
             <p className="text-sm text-muted">{p.excerpt}</p>
             <div className="mt-4">
-              <a className="text-secondary font-medium">Read →</a>
+              <a className="text-secondary font-medium group cursor-default">
+                Read{" "}
+                <span className="inline-block transform transition-transform duration-300 group-hover:translate-x-2 cursor-default">
+                  →
+                </span>
+              </a>
             </div>
           </motion.article>
         ))}

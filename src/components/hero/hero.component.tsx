@@ -74,7 +74,7 @@ export const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          <MagneticButton className="bg-primary text-background font-semibold shadow">
+          <MagneticButton className="bg-primary text-foreground font-semibold shadow">
             See my work
           </MagneticButton>
           <MagneticButton className="border border-foreground font-medium">

@@ -23,9 +23,9 @@ export const ExperienceTimeline = () => {
   return (
     <section className="py-20 px-6 bg-card">
       <h2 className="text-3xl font-bold text-center mb-10">Experience</h2>
-      <div className="max-w-4xl mx-auto relative">
+      <div className="md:max-w-4xl md:mx-auto relative">
         <div className="absolute left-6 top-4 bottom-4 w-px bg-divider" />
-        <div className="space-y-8 pl-12">
+        <div className="space-y-8 ">
           {items.map((it, i) => (
             <motion.div
               key={it.year}
