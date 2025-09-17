@@ -12,14 +12,16 @@
 }
 
 /* ✅ Dark mode using data-theme instead of prefers-color-scheme */
-[data-theme="dark"] {
-  --background: #37353e;
-  --foreground: #d3dad9;
-  --primary: #d3dad9;
-  --secondary: #715a5a;
-  --divider: #44444e;
-  --muted: #d3dad9cc;
-  --card: #44444e;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #37353e;
+    --foreground: #d3dad9;
+    --primary: #d3dad9;
+    --secondary: #715a5a;
+    --divider: #44444e;
+    --muted: #d3dad9cc;
+    --card: #44444e;
+  }
 }
 
 /* Tailwind theme integration */
@@ -50,6 +52,7 @@ body,
 #__next {
   height: 100%;
 }
+html,
 body {
   background: var(--background);
   color: var(--foreground);
