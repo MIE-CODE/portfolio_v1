@@ -52,7 +52,7 @@ export const Hero = () => {
           initial={{ scale: 0.98 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="text-5xl md:text-6xl font-extrabold leading-tight"
+          className="text-2xl sm:text-4xl lg:text-6xl font-extrabold leading-tight"
         >
           Hi, I’m <span className="text-secondary">Menyaga Enyo Israel</span> —
           crafting delightful interfaces & fast apps.
