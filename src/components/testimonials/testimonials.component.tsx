@@ -28,11 +28,11 @@ export const Testimonials = () => {
         <AnimatePresence>
           <motion.blockquote
             key={i}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, y: 10, position: "absolute" }}
+            animate={{ opacity: 1, y: 0, position: "relative" }}
+            exit={{ opacity: 0, y: -10, position: "absolute" }}
             transition={{ duration: 0.4 }}
-            className="p-8 rounded-2xl border border-divider bg-card text-center"
+            className="w-full max-w-[768px] p-8 rounded-2xl border border-divider bg-card text-center"
           >
             <p className="text-muted mb-4">“{testimonials[i].text}”</p>
             <div className="font-semibold">
